@@ -16,6 +16,10 @@ Disable an apache2 module:`
 sudo a2dismod
 `
 
+Reload server:`
+service apache2 reload
+`
+
 Force reload the server:`
 sudo /etc/init.d/apache2 force-reload
 `
