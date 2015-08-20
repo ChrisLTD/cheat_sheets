@@ -5,11 +5,11 @@ mysql -u USERNAME -pPASSWORD
 `
 
 Dump:`
-mysqldump -u USERNAME -pPASSWORD [database_name] > DUMP.SQL
+mysqldump -u USERNAME -pPASSWORD DATABASENAME > DUMP.SQL
 `
 
 Restore:`
-mysql -u USERNAME -pPASSWORD [database_name] < DUMP.SQL
+mysql -u USERNAME -pPASSWORD DATABASENAME < DUMP.SQL
 `
 
 Add user:
