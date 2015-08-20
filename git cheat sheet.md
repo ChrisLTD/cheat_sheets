@@ -1,5 +1,6 @@
 # Aliases to add to .gitconfig file
 
+`
 [alias]
   co = checkout
   ec = config --global -e
@@ -16,3 +17,4 @@
   st = status
   logp = log --pretty=oneline --max-count=20
   subinit = !git submodule init && git submodule update
+`
