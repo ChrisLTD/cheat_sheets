@@ -6,16 +6,22 @@ Delete a directory:`
 rm -r directory
 `
 
+## CURL
+
+Download file:`
+curl -O URLHERE
+`
+
 ## MySQL
 
-Login: `
+Login:`
 mysql -u USERNAME -pPASSWORD
 `
 
-Dump: `
+Dump:`
 mysqldump -u USERNAME -pPASSWORD [database_name] > DUMP.SQL
 `
 
-Restore: `
+Restore:`
 mysql -u USERNAME -pPASSWORD [database_name] < DUMP.SQL
 `
