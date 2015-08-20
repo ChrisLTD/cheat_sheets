@@ -13,11 +13,11 @@ apache2ctl -M
 `
 
 Enable an apache2 module:`
-sudo a2enmod
+sudo a2enmod MODULENAME
 `
 
 Disable an apache2 module:`
-sudo a2dismod
+sudo a2dismod MODULENAME
 `
 
 Reload server:`
