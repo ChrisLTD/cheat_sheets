@@ -22,7 +22,9 @@ Copy folder:`
 cp -avr SOURCE DEST
 `
 
-
+Watch file:`
+less +F YOUR.LOG
+`
 
 ## CURL
 
@@ -65,6 +67,16 @@ sudo a2dismod
 Force reload the server:`
 sudo /etc/init.d/apache2 force-reload
 `
+
+Virtual Host:
+```
+<VirtualHost *:80>
+  DocumentRoot /var/www/site/www
+  ServerName site.example.com
+  CustomLog /var/www/logs/site/access.log combined
+  ErrorLog /var/www/logs/site/error.log
+</VirtualHost>
+```
 
 ## Processes
 
