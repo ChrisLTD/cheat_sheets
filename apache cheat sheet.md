@@ -8,6 +8,10 @@ Disable site:`
 sudo a2dissite
 `
 
+List apache modules:`
+apache2ctl -M
+`
+
 Enable an apache2 module:`
 sudo a2enmod
 `
@@ -23,6 +27,12 @@ service apache2 reload
 Force reload the server:`
 sudo /etc/init.d/apache2 force-reload
 `
+
+Apache file permissions:
+```
+chown -R www-data:www-data /folder/
+chmod +r /folder
+```
 
 Virtual Host:
 ```

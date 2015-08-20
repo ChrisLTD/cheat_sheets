@@ -57,6 +57,10 @@ Find process:`
 ps -ef | grep PROCESS NAME
 `
 
+Process list:`
+ps aux
+`
+
 Root process list:`
 ps -u root
 `
