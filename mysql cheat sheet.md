@@ -12,8 +12,25 @@ Restore:`
 mysql -u USERNAME -pPASSWORD [database_name] < DUMP.SQL
 `
 
-Add user:```
+Add user:
+```
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
+
+List databases:`
+SHOW DATABASES;
+`
+
+Add database:`
+CREATE DATABASE databasename;
+`
+
+Use database:`
+USE databasename;
+`
+
+Drop database:`
+DROP DATABASE databasename;
+`
