@@ -19,7 +19,6 @@ git rm --cached -r MYDIRECTORY
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
   cob = checkout -b
   cm = !git add -A && git commit -m
-  cmp = !git add -A && git commit -m && git push
   save = !git add -A && git commit -m 'SAVEPOINT'
   wip = !git add -u && git commit -m "WIP"
   undo = reset HEAD~1 --mixed
