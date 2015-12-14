@@ -113,9 +113,10 @@ Push app:`
 git push dokku master
 `
 
-In your production group, you'll likely want these two gems:`
+In your production group, you'll likely want these two gems:
+```
 gem 'pg' # postgres
 gem 'rails_12factor' # for logging
-`
+```
 
 SSH into server to run dokku commands. Use `dokku --help` for list of commands.
