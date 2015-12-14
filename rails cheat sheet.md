@@ -106,3 +106,18 @@ ruby '1.9.3'
 To get your assets to properly compile on heroku, change your production.rb file to say true here instead of false:`
 config.assets.compile = true
 `
+
+## Dokku
+
+Push app:`
+git push dokku master
+`
+
+In your production group, you'll likely want these two gems:`
+# postgres
+gem 'pg'
+# for logging
+`
+gem 'rails_12factor'
+
+SSH into server to run dokku commands. Use `dokku --help` for list of commands.
