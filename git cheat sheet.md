@@ -1,4 +1,16 @@
-# Aliases to add to .gitconfig file
+# Git Cheat Sheet
+
+## Commands
+
+Remove a file from the repo without deleting it:`
+git rm --cached MYFILE.TXT
+`
+
+Remove a directory from the repo without deleting it:`
+git rm --cached -r MYDIRECTORY
+`
+
+## Aliases to add to .gitconfig file
 
 ```
 [alias]
