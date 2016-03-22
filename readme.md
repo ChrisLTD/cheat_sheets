@@ -4,6 +4,8 @@
 
 ## [Git](https://github.com/ChrisLTD/cheat_sheets/blob/master/git%20cheat%20sheet.md)
 
+## [iOS](https://github.com/ChrisLTD/cheat_sheets/blob/master/ios%20cheat%20sheet.md)
+
 ## [MySQL](https://github.com/ChrisLTD/cheat_sheets/blob/master/mysql%20cheat%20sheet.md)
 
 ## [Rails](https://github.com/ChrisLTD/cheat_sheets/blob/master/rails%20cheat%20sheet.md)
