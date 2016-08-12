@@ -1,11 +1,11 @@
 # Apache
 
 Enable site:`
-sudo a2ensite
+sudo a2ensite SITENAME
 `
 
 Disable site:`
-sudo a2dissite
+sudo a2dissite SITENAME
 `
 
 List apache modules:`

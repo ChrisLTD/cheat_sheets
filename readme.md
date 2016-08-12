@@ -8,6 +8,8 @@
 
 ## [MySQL](https://github.com/ChrisLTD/cheat_sheets/blob/master/mysql%20cheat%20sheet.md)
 
+## [ngnix](https://github.com/ChrisLTD/cheat_sheets/blob/master/ngnix%20cheat%20sheet.md)
+
 ## [Rails](https://github.com/ChrisLTD/cheat_sheets/blob/master/rails%20cheat%20sheet.md)
 
 ## [Shell](https://github.com/ChrisLTD/cheat_sheets/blob/master/shell%20cheat%20sheet.md)
