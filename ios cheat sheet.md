@@ -21,3 +21,5 @@ rm -rf ~/Library/Developer/Xcode/DerivedData/*
 Delete old test device support files: `
 open ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 `
+
+Go into Xcode Organizer and delete old Archives.
