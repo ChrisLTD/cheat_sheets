@@ -89,7 +89,8 @@ Migrate database:`
 heroku run rake db:migrate
 `
 
-If you want to run sqlite locally and pg on heroku, your gemfile needs to look like this:`
+If you want to run sqlite locally and pg on heroku, your gemfile needs to look like this:
+```
 group :development do
    gem 'sqlite3'
 end
@@ -97,7 +98,7 @@ end
 group :production do
    gem 'pg'
 end
-`
+```
 
 You may need to add the Ruby version to your gemfile as well:`
 ruby '1.9.3'
