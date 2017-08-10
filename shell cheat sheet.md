@@ -26,6 +26,10 @@ Watch file:`
 less +F YOUR.LOG
 `
 
+Move/Rename folder:`
+mv OLD NEW
+`
+
 ## CURL
 
 Download file:`
