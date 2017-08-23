@@ -84,3 +84,7 @@ rails new myapp
 Setting up a project with PostgreSQL, you may need to edit `config/database.yml` to match the user you created earlier:`
 rails new myapp -d postgresql
 `
+
+Run Rails dev server so you can [access it remotely](https://stackoverflow.com/a/30723007/648844):`
+rails s -b 0.0.0.0
+`
