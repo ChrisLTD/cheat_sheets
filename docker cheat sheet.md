@@ -68,6 +68,14 @@ Remove containers that haven't been used in weeks:`
 docker ps -a | grep Exited | grep "weeks ago" | awk '{print $1}' | xargs docker rm
 `
 
+Remove container:`
+docker rm CONTAINER_NAME
+`
+
+Remove image:`
+docker rmi IMAGE_NAME
+`
+
 # Documentation links:
 
 * [Official documentation](https://docs.docker.com)
