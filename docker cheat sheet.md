@@ -40,7 +40,35 @@ View Docker Compose logs:`
 docker-compose logs
 `
 
-## Documentation links:
+Remove unused images:`
+docker image prune
+`
+
+Remove stopped containers:`
+docker container prune
+`
+
+Remove unused volumes:`
+docker volume prune
+`
+
+Remove unused networks:`
+docker network prune
+`
+
+Run all prunes:`
+docker system prune
+`
+
+See all containers (even stopped containers):`
+docker ps -a --no-trunc
+`
+
+Remove containers that haven't been used in weeks:`
+docker ps -a | grep Exited | grep "weeks ago" | awk '{print $1}' | xargs docker rm
+`
+
+# Documentation links:
 
 * [Official documentation](https://docs.docker.com)
 * [Docker Tips and Cheatsheet](https://blog.jez.io/2015/07/12/docker-tips-and-cheatsheet/)
