@@ -8,6 +8,10 @@ Start with a Docker Compose file and run as a background daemon:`
 docker-compose up -d
 `
 
+Force recreate & rebuild a Docker Compose containers:`
+docker-compose up --force-recreate --build
+`
+
 Stop services with Docker Compose:`
 docker-compose stop
 `
