@@ -29,6 +29,39 @@ Check recent SSH logins:`
 grep "Accepted" /var/log/auth.log
 `
 
+## [Setup 2FA for SSH](https://ubuntu.com/tutorials/configure-ssh-2fa#1-overview)
+
+Start a terminal session and type:`
+sudo apt install libpam-google-authenticator
+`
+To make SSH use the Google Authenticator PAM module, add the following line to the `/etc/pam.d/sshd` file:`
+auth required pam_google_authenticator.so
+`
+
+Now you need to restart the sshd daemon using:`
+sudo systemctl restart sshd.service
+`
+
+Modify `/etc/ssh/sshd_config` – change `ChallengeResponseAuthentication` from no to yes, so this part of the file looks like this:`
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+ChallengeResponseAuthentication no # CHANGE THIS TO YES
+
+# Change to no to disable tunnelled clear text passwords
+#PasswordAuthentication yes
+`
+
+In a terminal, run the `google-authenticator` command.
+
+It will ask you a series of questions, here is a recommended configuration:
+
+* Make tokens “time-base””: yes
+* Update the .google_authenticator file: yes
+* Disallow multiple uses: yes
+* Increase the original generation time limit: no
+* Enable rate-limiting: yes
+
+
 ## [Installing Rails](https://gorails.com/setup/ubuntu/16.04)
 
 Install Ruby dependencies:`
