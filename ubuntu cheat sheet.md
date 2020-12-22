@@ -25,6 +25,10 @@ Then change `PasswordAuthentication` from `yes` to `no`, save the file, and fina
 sudo systemctl restart sshd
 `
 
+Check recent SSH logins:`
+grep "Accepted" /var/log/auth.log
+`
+
 ## [Installing Rails](https://gorails.com/setup/ubuntu/16.04)
 
 Install Ruby dependencies:`
