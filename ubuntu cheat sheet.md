@@ -29,17 +29,13 @@ Check recent SSH logins:`
 grep "Accepted" /var/log/auth.log
 `
 
-## [Setup 2FA for SSH](https://ubuntu.com/tutorials/configure-ssh-2fa#1-overview)
+## [Setup](https://developer.ibm.com/devpractices/devops/blogs/two-factor-authentication-for-ssh/) [2FA](https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-16-04) [for SSH](https://ubuntu.com/tutorials/configure-ssh-2fa#1-overview)
 
 Start a terminal session and type:`
 sudo apt install libpam-google-authenticator
 `
 To make SSH use the Google Authenticator PAM module, add the following line to the `/etc/pam.d/sshd` file:`
 auth required pam_google_authenticator.so
-`
-
-Now you need to restart the sshd daemon using:`
-sudo systemctl restart sshd.service
 `
 
 Modify `/etc/ssh/sshd_config` – change `ChallengeResponseAuthentication` from no to yes, so this part of the file looks like this:
@@ -52,6 +48,10 @@ ChallengeResponseAuthentication no # CHANGE THIS TO YES
 #PasswordAuthentication yes
 ```
 
+Then add this to the same `/etc/ssh/sshd_config` file:`
+AuthenticationMethods publickey,keyboard-interactive
+`
+
 In a terminal, run the `google-authenticator` command.
 
 It will ask you a series of questions, here is a recommended configuration:
@@ -63,6 +63,12 @@ It will ask you a series of questions, here is a recommended configuration:
 * Enable rate-limiting: yes
 
 Store the 2FA stuff in your favorite auth manager, and keep a copy of the recovery codes.
+
+
+Restart the sshd daemon using:`
+sudo systemctl restart sshd.service
+`
+
 
 ## [Installing Rails](https://gorails.com/setup/ubuntu/16.04)
 
