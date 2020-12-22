@@ -42,14 +42,15 @@ Now you need to restart the sshd daemon using:`
 sudo systemctl restart sshd.service
 `
 
-Modify `/etc/ssh/sshd_config` – change `ChallengeResponseAuthentication` from no to yes, so this part of the file looks like this:`
+Modify `/etc/ssh/sshd_config` – change `ChallengeResponseAuthentication` from no to yes, so this part of the file looks like this:
+```
 # Change to yes to enable challenge-response passwords (beware issues with
 # some PAM modules and threads)
 ChallengeResponseAuthentication no # CHANGE THIS TO YES
 
 # Change to no to disable tunnelled clear text passwords
 #PasswordAuthentication yes
-`
+```
 
 In a terminal, run the `google-authenticator` command.
 
@@ -61,6 +62,7 @@ It will ask you a series of questions, here is a recommended configuration:
 * Increase the original generation time limit: no
 * Enable rate-limiting: yes
 
+Store the 2FA stuff in your favorite auth manager, and keep a copy of the recovery codes.
 
 ## [Installing Rails](https://gorails.com/setup/ubuntu/16.04)
 
