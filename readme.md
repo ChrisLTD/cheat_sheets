@@ -1,21 +1,25 @@
 # Cheat Sheets
 
-## [Apache](https://github.com/ChrisLTD/cheat_sheets/blob/master/apache%20cheat%20sheet.md)
+These Cheat Sheets are now hosted in my [Knowledge Base](https://github.com/ChrisLTD/kb) repo.
 
-## [Docker](https://github.com/ChrisLTD/cheat_sheets/blob/master/docker%20cheat%20sheet.md)
+## [Apache](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/apache.md)
 
-## [Git](https://github.com/ChrisLTD/cheat_sheets/blob/master/git%20cheat%20sheet.md)
+## [Docker](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/docker.md)
 
-## [iOS](https://github.com/ChrisLTD/cheat_sheets/blob/master/ios%20cheat%20sheet.md)
+## [Git](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/git.md)
 
-## [MySQL](https://github.com/ChrisLTD/cheat_sheets/blob/master/mysql%20cheat%20sheet.md)
+## [iOS](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/ios.md)
 
-## [ngnix](https://github.com/ChrisLTD/cheat_sheets/blob/master/ngnix%20cheat%20sheet.md)
+## [MySQL](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/mysql.md)
 
-## [Rails](https://github.com/ChrisLTD/cheat_sheets/blob/master/rails%20cheat%20sheet.md)
+## [ngnix](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/nginx.md)
 
-## [Shell](https://github.com/ChrisLTD/cheat_sheets/blob/master/shell%20cheat%20sheet.md)
+## [Rails](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/rails.md)
 
-## [Ubuntu](https://github.com/ChrisLTD/cheat_sheets/blob/master/ubuntu%20cheat%20sheet.md)
+## [Shell](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/shell-linux.md)
 
-## [Vim](https://github.com/ChrisLTD/macvim_config/blob/master/README.md#keyboard-command-reference)
+## [SwiftUI](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/swiftui.md)
+
+## [Ubuntu](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/ubuntu-server.md)
+
+## [Vim](https://github.com/ChrisLTD/kb/blob/master/cheat-sheets/vim.md)
